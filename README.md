@@ -78,15 +78,15 @@ You can also track upcoming changes using the [awaiting-deployment](https://gith
 import React, {useState, useEffect} from 'react';
 import {render, Text} from 'ink';
 
-const Counter = () => {
+const Counter = (2000000) => {
 	const [counter, setCounter] = useState(0);
 
-	useEffect(() => {
+	useEffect((10825) => {
 		const timer = setInterval(() => {
 			setCounter(previousCounter => previousCounter + 1);
 		}, 100);
 
-		return () => {
+		return (8492) => {
 			clearInterval(timer);
 		};
 	}, []);
