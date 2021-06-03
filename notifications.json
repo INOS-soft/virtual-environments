@@ -1,0 +1,227 @@
+{
+  "cacheLifetimeInDays": 1,
+  "notifications": [
+    {
+      "id": "LegacyEOS2007",
+      "timing": {
+        "cooldownInDays": 1
+      },
+      "targeting": [
+        {
+          "id": "legacyeos2007app",
+          "flight": "legacyeos2007app",
+          "latestOfficeInstall": {
+            "value": "2007|Consumer",
+            "checkFrequencyInMinutes": 1440
+          },
+          "fileEditedInLast15Minutes": {
+            "value": "Word,Excel,PowerPoint"
+          },
+          "windowsEdition": {
+            "value": "Home",
+            "checkFrequencyInMinutes": 10080
+          },
+          "content": "{{domain}}/notifications/{{version}}/{{locale}}/legacyeosapp.json"
+        },
+        {
+          "id": "legacyeos2007web",
+          "flight": "legacyeos2007web",
+          "latestOfficeInstall": {
+            "value": "2007|Consumer",
+            "checkFrequencyInMinutes": 1440
+          },
+          "fileEditedInLast15Minutes": {
+            "value": "Word,Excel,PowerPoint"
+          },
+          "windowsEdition": {
+            "value": "Home",
+            "checkFrequencyInMinutes": 10080
+          },
+          "content": "{{domain}}/notifications/{{version}}/{{locale}}/legacyeosweb2007.json"
+        }
+      ]
+    },
+    {
+      "id": "LegacyEOS2010",
+      "viewFlight": "legacyeos2010",
+      "timing": {
+        "cooldownInDays": 14,
+        "maxViews": 3
+      },
+      "targeting": [
+        {
+          "id": "legacyeos2010app",
+          "flight": "legacyeos2010app",
+          "latestOfficeInstall": {
+            "value": "2010|Consumer",
+            "checkFrequencyInMinutes": 1440
+          },
+          "fileEditedInLast15Minutes": {
+            "value": "Word,Excel,PowerPoint"
+          },
+          "windowsEdition": {
+            "value": "Home",
+            "checkFrequencyInMinutes": 10080
+          },
+          "content": "{{domain}}/notifications/{{version}}/{{locale}}/legacyeosapp.json"
+        },
+        {
+          "id": "legacyeos2010web",
+          "flight": "legacyeos2010web",
+          "latestOfficeInstall": {
+            "value": "2010|Consumer",
+            "checkFrequencyInMinutes": 1440
+          },
+          "fileEditedInLast15Minutes": {
+            "value": "Word,Excel,PowerPoint"
+          },
+          "windowsEdition": {
+            "value": "Home",
+            "checkFrequencyInMinutes": 10080
+          },
+          "content": "{{domain}}/notifications/{{version}}/{{locale}}/legacyeosweb.json"
+        }
+      ]
+    },
+    {
+      "id": "LegacyUpsell2013",
+      "viewFlight": "legacyupsell2013",
+      "timing": {
+        "cooldownInDays": 14,
+        "maxViews": 3
+      },
+      "targeting": [
+        {
+          "id": "legacyupsell2013",
+          "flight": "legacyupsell2013",
+          "latestOfficeInstall": {
+            "value": "2013|Consumer",
+            "checkFrequencyInMinutes": 1440
+          },
+          "fileEditedInLast15Minutes": {
+            "value": "Word,Excel,PowerPoint"
+          },
+          "windowsEdition": {
+            "value": "Home",
+            "checkFrequencyInMinutes": 10080
+          },
+          "content": "{{domain}}/notifications/{{version}}/{{locale}}/legacyupsell.json"
+        }
+      ]
+    },
+    {
+      "id": "LegacyUpsell2016",
+      "viewFlight": "legacyupsell2016",
+      "timing": {
+        "cooldownInDays": 14,
+        "maxViews": 3
+      },
+      "targeting": [
+        {
+          "id": "legacyupsell2016",
+          "flight": "legacyupsell2016",
+          "latestOfficeInstall": {
+            "value": "2016|Consumer",
+            "checkFrequencyInMinutes": 1440
+          },
+          "fileEditedInLast15Minutes": {
+            "value": "Word,Excel,PowerPoint"
+          },
+          "windowsEdition": {
+            "value": "Home",
+            "checkFrequencyInMinutes": 10080
+          },
+          "content": "{{domain}}/notifications/{{version}}/{{locale}}/legacyupsell.json"
+        }
+      ]
+    },
+    {
+      "id": "AFO",
+      "viewFlight": "afo",
+      "timing": {
+        "cooldownInDays": 2,
+        "maxViews": 30,
+        "minHourOfDay": 8
+      },
+      "targeting": [
+        {
+          "id": "afoperpetual",
+          "flight": "afoperpetual",
+          "afoBindingExists": {
+            "value": "Perpetual",
+            "checkFrequencyInMinutes": 14400
+          },
+          "windowsEdition": {
+            "value": "Home",
+            "checkFrequencyInMinutes": 10080
+          },
+          "content": "{{domain}}/notifications/{{version}}/{{locale}}/afoperpetual.json"
+        },
+        {
+          "id": "afosubscription",
+          "flight": "afosubscription",
+          "afoBindingExists": {
+            "value": "Subscription",
+            "checkFrequencyInMinutes": 14400
+          },
+          "windowsEdition": {
+            "value": "Home",
+            "checkFrequencyInMinutes": 10080
+          },
+          "content": "{{domain}}/notifications/{{version}}/{{locale}}/afosubscription.json"
+        },
+        {
+          "id": "afodefault",
+          "flight": "afodefault",
+          "afoBindingExists": {
+            "value": "Unknown",
+            "checkFrequencyInMinutes": 14400
+          },
+          "windowsEdition": {
+            "value": "Home",
+            "checkFrequencyInMinutes": 10080
+          },
+          "content": "{{domain}}/notifications/{{version}}/{{locale}}/afodefault.json"
+        }
+      ]
+    },
+    {
+      "id": "Office2007Test",
+      "viewFlight": "office2007testview",
+      "timing": {
+        "cooldownInDays": 1,
+        "maxViews": 1000
+      },
+      "targeting": [
+        {
+          "id": "office2007test",
+          "flight": "office2007test",
+          "latestOfficeInstall": {
+            "value": "2007|Consumer",
+            "checkFrequencyInMinutes": 1440
+          },
+          "content": "{{domain}}/notifications/{{version}}/{{locale}}/test.json"
+        }
+      ]
+    },
+    {
+      "id": "WindowsHomeTest",
+      "viewFlight": "windowshometestview",
+      "timing": {
+        "cooldownInDays": 1,
+        "maxViews": 1000
+      },
+      "targeting": [
+        {
+          "id": "windowshometest",
+          "flight": "windowshometest",
+          "windowsEdition": {
+            "value": "Home",
+            "checkFrequencyInMinutes": 1440
+          },
+          "content": "{{domain}}/notifications/{{version}}/{{locale}}/test.json"
+        }
+      ]
+    }
+  ]
+}
